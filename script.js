@@ -1,15 +1,16 @@
-const student = {
-    name: "shamsul islam shams",
-    age: 22,
-    address: "sylhet, bangladesh",
-    history: {
-        about: "hi iam a front end devloper i really do it which i love ",
-        gogl: "next goal is concur new tech"
-    }
+// example of spread opearator
+const profail = {
+    name: "rayhan",
+    age: 32
+};
+
+const stdHistory = {
+    pastYear: 2022,
+    currentYear: 2026
 }
+const fullHistory = {
+    ...profail,
+    ...stdHistory
+};
 
-// destructuring 
-
-const { history: { about, gogl } } = student;
-
-console.log(history);
+console.log(fullHistory);

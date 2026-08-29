@@ -1,16 +1,5 @@
-// example of spread opearator
-const profail = {
-    name: "rayhan",
-    age: 32
-};
-
-const stdHistory = {
-    pastYear: 2022,
-    currentYear: 2026
-}
-const fullHistory = {
-    ...profail,
-    ...stdHistory
-};
-
-console.log(fullHistory);
+let fruits = ["apple", "mango", "pinapple", "orange"];
+ 
+let newFruits = fruits.forEach((f, idx)=>{
+    console.log(`here ${idx} "-->" are available ${f}`);
+});

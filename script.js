@@ -1,18 +1,15 @@
-let products =[
-
-    {title: "mouse", price : 500, category: "electronics"},
-    {title: "bike", price : 4500, category: "rider"},
-    {title: "keyboard", price : 1400, category: "electronics"},
-    {title: "venche cycle", price : 1500, category: "vehicle"},
+let movies = [
+ {movieName: "jhankar", rating: 4.5, category: "scifi"},
+ {movieName: "abdullahpur", rating: 5.3, category: "fury"},
+ {movieName: "abdullahpur", rating: 8.3, category: "scifi"},
 ];
 
-let totalPrice = products.reduce((acc, current)=>{
-    return acc += current.price;
-}, 0);
+let topMovies = movies.filter
+((m)=>
+    m.category === "scifi").sort
+((a, b)=> b.rating - a.rating)?.map
+((m)=> `the top movie is ${m.movieName} and its rating rate ${m.rating}`).forEach
+((m)=> console.log(`see or not want or not ${m}`));
 
-console.log(totalPrice);
+console.log(topMovies);
 
-
-
-let sorted = [32, 4, 2, 45, 2, 22, 4222, 423434, 45].sort((a , b) => b - a);
-console.log(sorted);

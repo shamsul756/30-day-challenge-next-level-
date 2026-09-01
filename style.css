@@ -1,4 +1,7 @@
-.demo
-{
-    background-color: red;
+.app{
+    border: 1px solid red;
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
